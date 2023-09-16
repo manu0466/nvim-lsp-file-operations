@@ -6,6 +6,7 @@ local log = require('lsp-file-operations.log')
 local default_config = {
   debug = false,
   recurisive_rename = false,
+  autosave = false,
 }
 
 M.setup = function(opts)

@@ -57,6 +57,11 @@ M.callback = function(opts, data)
           end
         end
       end
+
+      if opts.autosave then
+        -- Save all the affected bufferss after the workspace edit.
+        vim.cmd("silent! wa")
+      end
     end
   end
 end
